@@ -1,0 +1,15 @@
+body{
+    background-color:black;
+    color:red;
+    text-align:center;
+}
+h1{
+    font-size:40px;
+    color:white;
+}
+.home{
+    background:url("https://www.tabletopanalytics.com/images/thumbs/8A3939D870348465FC0D62EDD74D319B.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
