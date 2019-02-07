@@ -12,40 +12,50 @@
 
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <title>Contact me</title>
+        <title>Liam's Homepage</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-    </head> 
+    </head>
     <body>
         <div class="container-fluid">
-            <div class="page header">
-                Liam
+            <div class="jumbotron home">
+                <h1>Liam's Game Page</h1>
             </div>
             <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span> <!-- only appears for screen readers -->
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Games</a>
-                </div><!-- Collect the nav links for toggling -->
-                <div class="collapse navbar-collapse" id="links">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="#">Contact Me</a><span class="sr-only">(current)</span></li>
-                        <li><a href="history.html>Historys</a></li>
-                    </ul>
-            </nav>
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span> <!-- only appears for screen readers -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Games</a>
+            </div><!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse" id="links">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a><span class="sr-only">(current)</span></a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                    <li><a href="history.html>Historys</a></li>
+                </ul>
+        </nav>
             <div class="row">
-                <span class="btn btn-primary col-md-12"><span class="glyphicon glyphicon-envelope"></span>Email Me:</span>
-                    <div class="text-center">lhaggerty</div>
-                <span class="btn btn-primary col-md-12"><span class="	glyphicon glyphicon-home"></span>Mail Me:</span>
-                    <div class="text-center">2 educational drive</div>
-                <span class="btn btn-primary col-md-12"><span class="glyphicon glyphicon-earphone"></span>Call Me:</span>
-                    <div class="text-center">(123)456-7890</div>
-            </div>
-        </div>
+                <div class="col-md-6">
+                    <label>Type bolder, parchment, or shears then click the play button:</label>
+                    <input id='userInput'>
+                    <br>
+                    <div class= "btn btn-default"onclick= "playRPS()">Bolder parchment shears</div>
+                    <p id= 'userOutput'></p>
+                    <p id= 'computerOutput'></p>
+                    <p id= 'rpsOutput'></p>
+                </div>
+                <div class="col-md-6">
+                    <p id= 'diceOutput'></p>
+                    <div class= "btn btn-default" onclick= "diceRoll()">Dice game</div>
+                </div><!--close col-->
+            </div><!--close row-->
+        </div><!--close container-->
+    <script src = 'Craps.js'></script>
+    <script src = 'RPS.js'></script>
     </body>
+</html>
